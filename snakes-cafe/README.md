@@ -10,5 +10,4 @@
     - Print out a summary of complete order.
     - Only allow ordering items on the menu.
     - Allow ordering items not on menu but give custom reply.
-
->[The-PR]()
+>[The-PR](https://github.com/alkhatib99/snakes-cafe/pull/1)
