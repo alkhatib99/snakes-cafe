@@ -1,10 +1,3 @@
-
-from errno import ENETDOWN
-from re import U
-import this
-
-from pkg_resources import WorkingSet
-
 def main():
     doc= """
 
@@ -44,7 +37,6 @@ def main():
         ** What would you like to order? **
         *********************************** 
     """
-        # define a 4 dictionaries the main types of items
 
     Appetizers = {'Wings': 0, 'Cookies': 0, 'Spring Rolls': 0}
     Entrees = {'Salmon': 0, 'Steak': 0,
@@ -52,13 +44,11 @@ def main():
     Desserts = {'Ice Cream': 0,
                     'Cake': 0, 'Pie': 0}
     Drinks = {'Coffee': 0, 'Tea': 0, 'Unicorn Tears': 0}
-        # take user input            
-    # print(help(main))
+
     print(doc)
     user = str(input('>')).capitalize()
-        # looping and take orders till user enter quit 
+
     while user != 'Quit':
-        # check if teh input were in any of the 4 dictionarires 
         if user in Appetizers.keys():
             for key in Appetizers.keys():
                 if key == user:
@@ -84,5 +74,9 @@ def main():
         
         user = str(input('\n>')).capitalize()
 
-main()
+
+
+if __name__=="__main__":
+
+    main()
         
